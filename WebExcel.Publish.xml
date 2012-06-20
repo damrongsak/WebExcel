@@ -1,0 +1,19 @@
+<publishData>
+  <publishTarget publishUrl="D:\WORKSPACE\ExcelWorkbook1\Publish\">
+    <file relUrl="bin/itextsharp.dll" publishTime="01/25/2012 15:59:38" />
+    <file relUrl="bin/PTTICT.ServiceTracking.USL.Web.pdb" publishTime="06/15/2012 16:19:32" />
+    <file relUrl="bin/PTTICT.ServiceTracking.USL.Web.xml" publishTime="06/15/2012 16:19:32" />
+    <file relUrl="bin/WebExcel.xml" publishTime="06/16/2012 13:15:04" />
+    <file relUrl="testpage.aspx" publishTime="06/16/2012 13:14:38" />
+    <file relUrl="Web.config" publishTime="06/16/2012 13:12:46" />
+    <file relUrl="bin/WebExcel.dll" publishTime="06/16/2012 13:15:04" />
+    <file relUrl="bin/DayPilot.dll" publishTime="11/02/2010 19:56:34" />
+    <file relUrl="bin/AjaxControlToolkit.dll" publishTime="08/07/2011 14:04:21" />
+    <file relUrl="bin/PTTICT.ServiceTracking.USL.Web.dll" publishTime="06/15/2012 16:19:32" />
+    <file relUrl="bin/FredCK.FCKeditorV2.dll" publishTime="08/07/2011 14:04:22" />
+    <file relUrl="bin/WebExcel.pdb" publishTime="06/16/2012 13:15:04" />
+    <file relUrl="bin/DayPilot.MonthPicker.dll" publishTime="10/13/2010 21:38:30" />
+    <file relUrl="bin/itextsharp.xtra.dll" publishTime="01/25/2012 15:59:26" />
+    <file relUrl="Default.aspx" publishTime="06/15/2012 15:47:15" />
+  </publishTarget>
+</publishData>

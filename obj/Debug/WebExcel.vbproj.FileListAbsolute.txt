@@ -1,0 +1,16 @@
+C:\WWW\WebExcel\bin\WebExcel.dll
+C:\WWW\WebExcel\bin\WebExcel.pdb
+C:\WWW\WebExcel\bin\WebExcel.xml
+C:\WWW\WebExcel\obj\Debug\ResolveAssemblyReference.cache
+C:\WWW\WebExcel\obj\Debug\WebExcel.Resources.resources
+C:\WWW\WebExcel\obj\Debug\WebExcel.vbproj.GenerateResource.Cache
+C:\WWW\WebExcel\obj\Debug\WebExcel.dll
+C:\WWW\WebExcel\obj\Debug\WebExcel.xml
+C:\WWW\WebExcel\obj\Debug\WebExcel.pdb
+C:\WWW\WebExcel\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\WWW\WebExcel\bin\CrystalDecisions.Shared.dll
+C:\WWW\WebExcel\bin\Microsoft.Office.Interop.Excel.dll
+C:\WWW\WebExcel\bin\CrystalDecisions.Shared.xml
+C:\WWW\WebExcel\bin\CrystalDecisions.CrystalReports.Engine.xml
+C:\WWW\WebExcel\bin\office.dll
+C:\WWW\WebExcel\obj\Debug\WebExcel.vbproj.ResolveComReference.cache

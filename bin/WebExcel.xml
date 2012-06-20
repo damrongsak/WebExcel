@@ -1,0 +1,103 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebExcel
+</name>
+</assembly>
+<members>
+<member name="M:WebExcel.CryptoUtility.SymmetricCryptographer.#cctor">
+	<summary>
+ cctor sets up the symmetric algorithm instance and the RNG provider
+ </summary>
+</member><member name="P:WebExcel.CryptoUtility.SymmetricCryptographer.IsInitialized">
+	<summary>
+ Allows check to see if it has been initialized.
+ Only used during testing.
+ </summary>
+</member><member name="M:WebExcel.CryptoUtility.SymmetricCryptographer.Initialize">
+	<summary>
+ internal method used to set up symmetric algorithm with given key
+ </summary>
+</member><member name="M:WebExcel.CryptoUtility.SymmetricCryptographer.EncryptString(System.String,System.Byte[])">
+	<summary>
+ This method returns base64-encoded CipherText from ClearText
+ </summary>
+	<param name="clearString">ClearText string</param>
+	<param name="key">byte array full cryptographic key</param>
+	<returns>base64-encoded CipherText</returns>
+</member><member name="M:WebExcel.CryptoUtility.SymmetricCryptographer.DecryptString(System.String,System.Byte[])">
+	<summary>
+ This method returns ClearText from base64-encoded CipherText
+ </summary>
+	<param name="cipherString">Base64-encoded CipherText string</param>
+	<param name="key">byte array full cryptographic key</param>
+	<returns>ClearText string</returns>
+</member><member name="M:WebExcel.CryptoUtility.SymmetricCryptographer.Unload(System.Object,System.EventArgs)">
+	<summary>
+ Internal overload, sinks the ProcessExit and AppDomain Unload events so that we 
+ get first chance to clean up cryptObj objects--which are all IDisposable.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="T:WebExcel.CryptoUtility.SymmetricCryptographer">
+	<summary>
+ This class provides symmetric encryption services using the Rijndael Managed base class library provider.
+ It is modelled after the eWeek/Microsoft "OpenHack4" competition code.
+ 
+ 
+ </summary>
+</member><member name="M:WebExcel.BLLComponent.ExportControl(System.Web.UI.Control)">
+ Replace controls with literals 
+
+</member><member name="F:WebExcel._Default.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebExcel._Default.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebExcel._Default.Button2">
+	<summary>
+Button2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebExcel._Default.Button3">
+	<summary>
+Button3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebExcel._Default.FillWithStrings">
+	<summary>
+FillWithStrings control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebExcel.testpage.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>
