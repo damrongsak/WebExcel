@@ -65,12 +65,22 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\ServiceTracking\SourceCode\PTTICT.ServiceTracking.USL.Web\bin\itextsharp.xtra.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
     <Reference Include="PTTICT.ServiceTracking.USL.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\ServiceTracking\SourceCode\PTTICT.ServiceTracking.USL.Web\bin\PTTICT.ServiceTracking.USL.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Common, Version=1.1.2.2, Culture=neutral, PublicKeyToken=e2926748f8044ddb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files\e-iceblue\Spire.PDFConverter\Bin\Spire.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=2.0.3.2, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files\e-iceblue\Spire.PDFConverter\Bin\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=5.8.6.2, Culture=neutral, PublicKeyToken=7fdbc5e92357a8da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files\e-iceblue\Spire.PDFConverter\Bin\Spire.XLS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -120,27 +130,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="ExcelToPDF.aspx" />
     <Content Include="testpage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\BLL\BLL.vb" />
-    <Compile Include="Class\BLL\BLLException.vb" />
-    <Compile Include="Class\DAL\CRReportComponent.vb" />
-    <Compile Include="Class\DAL\DAL.vb" />
-    <Compile Include="Class\DAL\DAL1.vb" />
-    <Compile Include="Class\DAL\DALException.vb" />
-    <Compile Include="Class\DAL\DALSurvey.vb" />
-    <Compile Include="Class\DropdownController.vb" />
-    <Compile Include="Class\Encode\Data\AuditData.vb" />
-    <Compile Include="Class\Encode\Encryption.vb" />
-    <Compile Include="Class\Encode\SecurityUtil.vb" />
-    <Compile Include="Class\Encode\SharedException.vb" />
-    <Compile Include="Class\Encode\SymmetricCryptographer.vb" />
-    <Compile Include="Class\EventsController.vb" />
-    <Compile Include="Class\EventsModel.vb" />
-    <Compile Include="Class\ServicesController.vb" />
+    <Compile Include="Class\ExcelToPDF.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Class\excel_2007_create_file.vb" />
+    <Compile Include="Class\MsExcelToPDF.vb" />
     <Compile Include="Default.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -148,16 +147,13 @@
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Module\CacheUtil.vb" />
-    <Compile Include="Module\Controls.vb" />
-    <Compile Include="Module\CSVData.vb" />
-    <Compile Include="Module\DBUTIL.vb" />
-    <Compile Include="Module\Project.vb" />
-    <Compile Include="Module\Report.vb" />
-    <Compile Include="Module\Security.vb" />
-    <Compile Include="Module\SerializeHelper.vb" />
-    <Compile Include="Module\SiteAvailibility.vb" />
-    <Compile Include="Module\Utility.vb" />
+    <Compile Include="ExcelToPDF.aspx.designer.vb">
+      <DependentUpon>ExcelToPDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelToPDF.aspx.vb">
+      <DependentUpon>ExcelToPDF.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -191,8 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Class\ClassDiagram1.cd" />
-    <None Include="Module\DBUTIL.vb.ptt.bak" />
-    <None Include="Module\Module.cd" />
+    <None Include="Excels\sample.xls" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -202,21 +197,28 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="sample.xls" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
       <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
       <VersionMajor>2</VersionMajor>
-      <VersionMinor>4</VersionMinor>
+      <VersionMinor>5</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>primary</WrapperTool>
       <Isolated>False</Isolated>
-      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
     </COMReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Excels\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />

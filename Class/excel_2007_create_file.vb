@@ -1,5 +1,6 @@
 Imports Excel = Microsoft.Office.Interop.Excel
 
+'http://answers.microsoft.com/en-us/office/forum/office_2007-customize/office-2007-macros-page-orientation/17d2a9d3-a5f7-4282-8d4a-f15a12cb3556
 Public Class Excel_2007
     Public filePath As String = ""
 

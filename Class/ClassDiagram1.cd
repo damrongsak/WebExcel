@@ -2,59 +2,36 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="PTTICT.ServiceTracking.USL.Web.ServicesController">
     <Position X="0.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAgAAAAAAgAAAAAAQAAAAAAAAAAAAAAAAgAAAAQAAA=</HashCode>
-      <FileName>Class\ServicesController.vb</FileName>
-    </TypeIdentifier>
+    <TypeIdentifier />
   </Class>
   <Class Name="PTTICT.ServiceTracking.USL.Web.EventsController">
     <Position X="2.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAEAAEAA=</HashCode>
-      <FileName>Class\EventsController.vb</FileName>
-    </TypeIdentifier>
+    <TypeIdentifier />
   </Class>
   <Class Name="PTTICT.ServiceTracking.USL.Web.BLLComponent">
     <Position X="4.25" Y="0.5" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAoBMAEAAAQAAAAAABAAACMCBAEAgAAAAAgAAACA=</HashCode>
-      <FileName>Class\BLL\BLL.vb</FileName>
-    </TypeIdentifier>
+    <TypeIdentifier />
   </Class>
   <Class Name="PTTICT.ServiceTracking.USL.Web.DALComponent">
     <Position X="7" Y="0.5" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>/hopJN8E1FsRu/iGw3xVUMIzEsBtj9TFTAnxzvjBWPk=</HashCode>
-      <FileName>Class\DAL\DAL.vb</FileName>
-    </TypeIdentifier>
+    <TypeIdentifier />
   </Class>
   <Class Name="PTTICT.ServiceTracking.USL.Web.BLLException">
     <Position X="9.5" Y="0.5" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Class\BLL\BLLException.vb</FileName>
-    </TypeIdentifier>
+    <TypeIdentifier />
   </Class>
   <Class Name="PTTICT.ServiceTracking.USL.Web.DBUTIL">
-    <Position X="0.5" Y="3" Width="2" />
+    <Position X="0.5" Y="2.5" Width="2" />
     <NestedTypes>
       <Enum Name="PTTICT.ServiceTracking.USL.Web.DBUTIL.FieldTypes" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Module\DBUTIL.vb</NewMemberFileName>
-        </TypeIdentifier>
+        <TypeIdentifier />
       </Enum>
     </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>AAAAAGAEBRABQEAIAAAAAoJCKELtAgAAKCEgICABACA=</HashCode>
-      <FileName>Module\DBUTIL.vb</FileName>
-    </TypeIdentifier>
+    <TypeIdentifier />
   </Class>
   <Class Name="PTTICT.ServiceTracking.USL.Web.CSVData">
     <Position X="10" Y="2.5" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAQAAAAGAAAAAAEBCEBAQABADAgRAAAAgAAQACCAA=</HashCode>
-      <FileName>Module\CSVData.vb</FileName>
-    </TypeIdentifier>
+    <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PTTICT.ServiceTracking.USL.Web.DropdownController">
@@ -64,12 +41,16 @@
       <FileName>Class\DropdownController.vb</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="WebExcel.MsExcelToPDF">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\MsExcelToPDF.vb</FileName>
+    </TypeIdentifier>
+  </Class>
   <Module Name="PTTICT.ServiceTracking.USL.Web.Controls">
     <Position X="12.5" Y="2.5" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AIAAIAIAICIAEAgAEEAAAABAAAAAAAAAAAAAAAAAAAQ=</HashCode>
-      <FileName>Module\Controls.vb</FileName>
-    </TypeIdentifier>
+    <TypeIdentifier />
   </Module>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

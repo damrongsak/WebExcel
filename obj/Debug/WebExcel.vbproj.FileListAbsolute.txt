@@ -12,5 +12,8 @@ C:\WWW\WebExcel\bin\CrystalDecisions.Shared.dll
 C:\WWW\WebExcel\bin\Microsoft.Office.Interop.Excel.dll
 C:\WWW\WebExcel\bin\CrystalDecisions.Shared.xml
 C:\WWW\WebExcel\bin\CrystalDecisions.CrystalReports.Engine.xml
-C:\WWW\WebExcel\bin\office.dll
 C:\WWW\WebExcel\obj\Debug\WebExcel.vbproj.ResolveComReference.cache
+C:\WWW\WebExcel\bin\Spire.Common.dll
+C:\WWW\WebExcel\bin\Spire.Pdf.dll
+C:\WWW\WebExcel\bin\Spire.XLS.dll
+C:\WWW\WebExcel\bin\Spire.License.dll
